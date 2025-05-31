@@ -8,3 +8,14 @@ This is what GitHub uses when there's a file with the extension `.md` and it ren
 
 
 ## CSS
+
+
+To add in a stylesheet we need a file like `styles.css` which we then include in our HTML like this:
+
+```html
+<head>
+<link rel="stylesheet" href="styles.css">
+</head>
+```
+
+This then loads the stylesheet file called `styles.css`
