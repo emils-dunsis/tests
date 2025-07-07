@@ -15,6 +15,7 @@
 </body>
 </html>
 
+<```
 <head>
     <style>
         body {
@@ -26,13 +27,29 @@
 <body>
     <h1>example page</h1>
     <script>
-        current_idx = 0;
-        function changeBackground(){
-            const background_colors = ["b89bcf", "bbd1a9", "e3b719"];
-            document.body.style.backgroundColor = background_colors[current_idx];
-            current_idx = current_idx + 1 % background_colors.length;
+        
+        function SetColorScheme1(){
+            document.body.style.backgroundColor = "#bbd1a9";
+        }
+
+        function SetColorScheme2(){
+            document.body.style.backgroundColor = "#b89bcf";
+        }
+
+        function SetColorScheme3(){
+            document.body.style.backgroundColor = "#e3b719";
         }
     </script>
 
-    <button onclick="changeBackground()">Change the background to next in list</button>
+    <strong>This is an example of some functions and some buttons</strong>
+    <br>
+
+    <u>This is some underlined text</u>
+
+    <br>
+
+    <button onclick="SetColorScheme1()">Change to ColorScheme1</button>
+    <button onclick="SetColorScheme2()">Change to ColorScheme2</button>
+    <button onclick="SetColorScheme3()">Change to ColorScheme3</button>
 </body>
+```
