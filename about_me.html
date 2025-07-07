@@ -15,10 +15,10 @@
 </body>
 </html>
 
-  <head>
+ <head>
     <style>
         body {
-            background-color: blue;
+            background-color: green;
         }
     </style>
 </head>
@@ -26,11 +26,13 @@
 <body>
     <h1>example page</h1>
     <script>
+        current_idx = 0;
         function changeBackground(){
-            var blue = "#bbd1a9".replace(/blue/g,function(){return 
-            document.body.style.backgroundColor = bbd1a9;
+            const background_colors = ["green", "red", "blue"];
+            document.body.style.backgroundColor = background_colors[current_idx];
+            current_idx = current_idx + 1 % background_colors.length;
         }
     </script>
 
-    <button onclick="changeBackground()">Change the background to bbd1a9</button>
+    <button onclick="changeBackground()">Change the background to next in list</button>
 </body>
