@@ -18,3 +18,23 @@ background-color: bbd1a9;
 </body>
 </html>
 <div>
+
+    <head>
+    <style>
+        body {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>example page</h1>
+    <script>
+        function changeBackground(){
+            var randomColor = "#000000".replace(/0/g,function(){return (~~(Math.random()*16)).toString(16);});
+            document.body.style.backgroundColor = randomColor;
+        }
+    </script>
+
+    <button onclick="changeBackground()">Change the background randomly</button>
+</body>
